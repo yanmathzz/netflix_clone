@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="relative h-screen">
       <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
