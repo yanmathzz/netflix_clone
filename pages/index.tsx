@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       </Head>
      <Header />
       <main>
-        {/*banner*/}
+        <Banner/>
         <section>
           {/*Linhas*/}
           {/*Linhas*/}
