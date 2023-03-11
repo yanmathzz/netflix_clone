@@ -6,6 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.16",
+    "@heroicons/vue": "^2.0.16",
+    "@react-icons/all-files": "^4.1.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0"

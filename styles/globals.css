@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Base styles */
+body {
+    background-color: #141414;
+    color: #fff;
+  }
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+
+    /* Estilos para telas grandes */
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+  
+  /* Component styles */
+  .headerLink {
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: #e5e5e5;
+    transition-property: all;
+    transition-duration: 0.4s;
+  }
+  
+  .headerLink:hover {
+    color: #b3b3b3;
+  }
+  
