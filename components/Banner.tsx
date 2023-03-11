@@ -21,18 +21,14 @@ function Banner({ netflixOriginals }: Props) {
     return (
         <div>
             <div className='absolute top-0 left-0 h-[95vh] w-screen'>
-                <image 
+                <Image 
                src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
-                layout="fill"
-                objectFit="cover"
+               layout="fill"
+               objectFit='cover'
                 />
             </div>
-                <h1 className='text-2xl font-bold lg:text-7xl md:text-4xl'>
-                    {movie?.title || movie?.name || movie?.original_name}
-                </h1>
-                <p className="max-w-xs text-xs md:max-w-lg md:text-lg lg:max-w-2xl">
-                {movie?.overview}
-                </p>
+
+            <h1>{movie?.title}</h1>
         </div>
     )
 }
