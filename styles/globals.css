@@ -6,6 +6,7 @@
 body {
     background-color: #141414;
     color: #fff;
+    overflow-x: hidden;
   }
 
 header {
@@ -71,5 +72,17 @@ header {
       padding-right: 24px;
       font-size: 0.9rem;
     }
-  }
+
+  .modalButton {
+    display: flex;
+    height: 2.2rem; 
+    width: 2.2rem; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 50%; 
+    border: 2px solid rgb(15, 15, 15); 
+    background-color: rgb(15, 15, 15); 
+    transition: all 0.3s ease; 
+  } 
+}
   
