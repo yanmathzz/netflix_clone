@@ -31,11 +31,13 @@ function Banner({ netflixOriginals }: Props) {
         lg:pb-12"
     >
       <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
-        <Image
-          src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
-          layout="fill"
-          objectFit="cover"
-        />
+      <Image
+  src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
+  layout="fill"
+  objectFit="cover"
+  alt={movie?.title || movie?.name || movie?.original_name || ""}
+/>
+
       </div>
 
       <h1 className="text-2xl lg:text-7xl md:text-7xl font-bold">
