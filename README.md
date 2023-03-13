@@ -30,7 +30,7 @@
 
 ### 💻 Projeto
 
-UI Clone do serviço de streaming - Netflix, com o uso da API fornecida pelo The Movie Database. Esse Projeto foi desenvolvido durante a live ministrada pelo professor Boenick Lacerda. 
+UI Clone do serviço de streaming - Netflix, com o uso da API fornecida pelo The Movie Database.
 
 ### ✅ Demonstração
 <img src="https://github.com/yanmathzz/netflix_clone/blob/main/Images/banner_netflix.png" />
