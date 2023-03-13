@@ -66,10 +66,7 @@ header {
 
   @media (min-width: 768px) {
     .bannerButton {
-      padding-top: 0.4rem;
-      padding-bottom: 0.4rem;
-      padding-left: 24px;
-      padding-right: 24px;
+      padding: 0.625rem 2rem;
       font-size: 0.9rem;
     }
 
