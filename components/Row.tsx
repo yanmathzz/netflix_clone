@@ -4,31 +4,29 @@ import { useState } from "react";
 import { FaChevronLeft, FaChevronRight, FaDirections } from "react-icons/fa";
 import { Movie } from "../typings";
 import Thumbnail from "./Thumbnail";
-import React, { useRef } from 'react';
-
-
+import React, { useRef } from "react";
 
 interface Props {
-  title: string
-  movies: Movie[] 
+  title: string;
+  movies: Movie[];
 }
 
 function Row({ title, movies }: Props) {
-  const rowRef = useRef<HTMLDivElement>(null)
-  const [isMoved, setIsMoved] = useState(false)
+  const rowRef = useRef<HTMLDivElement>(null);
+  const [isMoved, setIsMoved] = useState(false);
 
   const handleClick = (direction: string) => {
-    setIsMoved(true)
+    setIsMoved(true);
     if (rowRef.current) {
-      const { scrollLeft, clientWidth } = rowRef.current
+      const { scrollLeft, clientWidth } = rowRef.current;
 
       const scrollTo =
-        direction === 'left'
+        direction === "left"
           ? scrollLeft - clientWidth
-          : scrollLeft + clientWidth
-      rowRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' })
+          : scrollLeft + clientWidth;
+      rowRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <div className="h-40 space-y-0.5 md:space-y-2">
@@ -38,9 +36,9 @@ function Row({ title, movies }: Props) {
       <div className="group relative md:-ml-2">
         <FaChevronLeft
           className={`absolute top-0 bottom-0 left-2 z-40 m-auto h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100 ${
-            !isMoved && 'hidden'
+            !isMoved && "hidden"
           }`}
-          onClick={() => handleClick('left')}
+          onClick={() => handleClick("left")}
         />
         <div
           className="flex items-center space-x-0.5 overflow-x-scroll scrollbar-hide md:space-x-2.5 md:p-2"
@@ -52,11 +50,11 @@ function Row({ title, movies }: Props) {
         </div>
         <FaChevronRight
           className="absolute top-0 bottom-0 right-2 z-40 m-auto h-9 w-9 cursor-pointer opacity-0 transition hover:scale-125 group-hover:opacity-100"
-          onClick={() => handleClick('right')}
+          onClick={() => handleClick("right")}
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default Row
+export default Row;
